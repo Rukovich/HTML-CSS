@@ -1,0 +1,13 @@
+.header {
+    background-color: #222222;
+    padding: 16px 0;
+    &__wrap {
+         @include space-between()
+    }
+    &__logo {
+        margin-right: 41px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 33px;
+    }
+}

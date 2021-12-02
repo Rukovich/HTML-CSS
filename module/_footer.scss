@@ -1,0 +1,24 @@
+.footer {
+    background-color: #222224;
+    height: 80px;
+    color: #FBFBFB;
+    @include space-between();
+    &__contact {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link {
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: white;
+        padding: 10px;
+        margin: 5px;
+        width: 35px;
+        height: 32px;
+        @include flex-center()
+    }
+}
+.footer__link:hover {
+    color: #EF5B70;
+}
