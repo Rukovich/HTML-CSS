@@ -25,6 +25,11 @@ $pink: #F16D7F;
     font-weight: 300;
     color: #5D5D5D;
 }
+.font-price{
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;}
 .container {
     max-width: 1160px;
     margin: 0 auto;
@@ -309,4 +314,5 @@ $pink: #F16D7F;
 @import 'module/footer';
 @import 'module/catalog';
 @import 'module/product';
+@import 'module/cart';
 @import 'module/registration';
