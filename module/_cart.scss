@@ -78,7 +78,14 @@ section {
     height: 272px;
     margin-top: 113px;
     display: block;
-    // outline: 1px solid purple;
+    &__p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-bottom: 12px;
+    }
+
     &__item-t {
         font-weight: 300;
         font-size: 16px;
@@ -106,13 +113,12 @@ section {
         background: none;
         border: none;
         cursor: pointer;
-        font-family: Lato;
-        font-style: normal;
         font-weight: 300;
         font-size: 11px;
         line-height: 13px;
         color: #4A4A4A;
     }
+    
 }
 .checkpoint {
     width: 360px;
@@ -126,12 +132,12 @@ section {
     &__p {
         padding-top: 39px;
         padding-right: 34px;
+        margin-bottom: 12px;
         font-size: 11px;
         line-height: 13px;
         color: #4A4A4A;
     }
     &__h {
-        padding-top: 12px;
         padding-right: 37px;
         font-weight: 300;
         font-size: 16px;
@@ -145,7 +151,7 @@ section {
         width: 275px;
         height: 1px;
         border: none;
-        background-color: red;
+        background-color: #E2E2E2;
     }
     &__input {
         display: flex;

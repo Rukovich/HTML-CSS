@@ -1,0 +1,54 @@
+.registration-block {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.reg-form {
+    width: 360px;
+    &__input {
+        width: 360px;
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        padding: 0 0 0 17px;
+    }
+    &__ln, &__pw{
+        margin-top: 21px;
+    }
+    & h4 {
+        margin-bottom: 20px;
+    }
+    & p {
+        margin: 15.5px 0 39px 0;
+    }
+    &__gender {
+        margin:32px 0 33px 0 ;
+    }
+    &__submit {
+        width: 167px;
+        height: 50px;
+        background: #F16D7F;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    &__gender-r {
+        margin-left: 20px;
+    }
+}
+.reg-list {
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+    & ul  {
+        list-style-image: url(/img/registration/check.svg);
+        list-style-position: inside;
+    }
+    & li {
+        padding-bottom: 16px;
+    }
+}
+
+

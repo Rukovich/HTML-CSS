@@ -1065,6 +1065,14 @@ section {
   display: block;
 }
 
+.shipping-form__p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 12px;
+}
+
 .shipping-form__item-t {
   font-weight: 300;
   font-size: 16px;
@@ -1101,8 +1109,6 @@ section {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: Lato;
-  font-style: normal;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
@@ -1132,13 +1138,13 @@ section {
 .checkpoint__p {
   padding-top: 39px;
   padding-right: 34px;
+  margin-bottom: 12px;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
 }
 
 .checkpoint__h {
-  padding-top: 12px;
   padding-right: 37px;
   font-weight: 300;
   font-size: 16px;
@@ -1157,7 +1163,7 @@ section {
   width: 275px;
   height: 1px;
   border: none;
-  background-color: red;
+  background-color: #E2E2E2;
 }
 
 .checkpoint__input {
@@ -1176,5 +1182,113 @@ section {
   margin: 0 42px;
   border: none;
   cursor: pointer;
+}
+
+.registration-block {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.reg-form {
+  width: 360px;
+}
+
+.reg-form__input {
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  padding: 0 0 0 17px;
+}
+
+.reg-form__ln, .reg-form__pw {
+  margin-top: 21px;
+}
+
+.reg-form h4 {
+  margin-bottom: 20px;
+}
+
+.reg-form p {
+  margin: 15.5px 0 39px 0;
+}
+
+.reg-form__gender {
+  margin: 32px 0 33px 0;
+}
+
+.reg-form__submit {
+  width: 167px;
+  height: 50px;
+  background: #F16D7F;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.reg-form__gender-r {
+  margin-left: 20px;
+}
+
+.reg-list {
+  width: 652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reg-list ul {
+  list-style-image: url(/img/registration/check.svg);
+  list-style-position: inside;
+}
+
+.reg-list li {
+  padding-bottom: 16px;
+}
+
+.font__11p {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.font__16p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.font__24p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.font__13p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.font__14p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.gray {
+  color: #B1B1B1;
 }
 /*# sourceMappingURL=style.css.map */
