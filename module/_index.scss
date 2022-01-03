@@ -1,0 +1,222 @@
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    margin-bottom: 95.5px;
+
+    &__input {
+        border: 1px solid #F16D7F;
+        text-decoration: none;
+        padding: 15px 38.5px;
+        color: #F16D7F;
+
+        &:hover {
+            color: white;
+            background-color: #F16D7F;
+        }
+    }
+}
+
+
+
+.promo {
+    background-color: #F1E4E6;
+
+    &__block {
+        min-height: 764px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url(img/promo/man.png);
+        background-repeat: no-repeat;
+        background-position-x: -228px;
+
+        @media (max-width: $max_mobile) {
+            min-height: 368px;
+            background-image: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        padding-left: 20px;
+        border-left: 12px solid #F16D7F;
+
+        @media (max-width: $max_mobile) {
+            & h1 {
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            & h2 {
+                font-size: 20px;
+                line-height: 24px
+            }
+
+            & span {
+                font-size: 20px;
+                line-height: 24px
+            }
+        }
+
+        @media (max-width: $max_tablet) {
+            & h1 {
+                font-size: 44px;
+                line-height: 53px;
+            }
+
+            & h2 {
+                font-size: 24px;
+                line-height: 29px
+            }
+
+            & span {
+                font-size: 24px;
+                line-height: 29px
+            }
+        }
+    }
+
+    & span {
+        color: #F16D7F;
+    }
+}
+
+
+.index {
+    margin-top: 96px;
+    margin-bottom: 48px;
+    text-align: center;
+
+    & p {
+        @include text-small()
+    }
+}
+
+.category {
+    margin-top: 65px;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 32%;
+        margin-bottom: 30px;
+        padding: 0 70px;
+        height: 180px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+
+        @media (max-width: $max_mobile) {
+            width: 100%;
+        }
+    }
+
+    &__item:last-child {
+        width: 100%;
+        height: 180px;
+        color: white;
+    }
+
+    & h2 {
+        color: #F16D7F;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item-1 {
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, .7), rgba(68, 50, 50, 0.7)),
+            url(img/category/categore-1.png);
+        background-size: cover;
+    }
+
+    &__item-2 {
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, .7), rgba(68, 50, 50, 0.7)),
+            url(img/category/categore-2.png);
+        background-size: cover;
+    }
+
+    &__item-3 {
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, .7), rgba(68, 50, 50, 0.7)),
+            url(img/category/categore-3.png);
+        background-size: cover;
+    }
+
+    &__item-4 {
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, .7), rgba(68, 50, 50, 0.7)),
+            url(img/category/categore-4.png);
+        background-size: cover;
+    }
+
+    &__footer {
+        margin-top: 96px;
+        margin-bottom: 48px;
+        text-align: center;
+
+        & p {
+            @include text-small()
+        }
+    }
+}
+
+.inform {
+    min-height: 341px;
+    background: #222224;
+    display: flex;
+    align-items: center;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $max_mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__element {
+        width: 33%;
+        text-align: center;
+        color: #FBFBFB;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+        @media (max-width: $max_mobile) {
+            width: 360px;
+        }
+
+        &:last-child>p {
+            margin-bottom: 50px;
+        }
+
+        & img {
+            width: 50px;
+            height: 40px;
+
+            @media (max-width: $max_mobile) {
+                margin-top: 50px;
+            }
+        }
+
+        & h3 {
+            padding: 16px 0px;
+        }
+
+    }
+}

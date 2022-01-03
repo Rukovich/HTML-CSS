@@ -1,12 +1,105 @@
+.subscribe {
+    min-height: 450px;
+    background-image: url(img/subscrible/subscrible-back.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+
+    @media (max-width: $max_mobile) {
+        height: 600px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (max-width: $max_mobile) {
+            justify-content: initial; //обнуление
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__desc {
+        width: 365px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        & img {
+            width: 96px;
+        }
+
+        & p {
+            padding-top: 30px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        @media (max-width: $max_mobile) {
+            margin-top: 60px;
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 142px;
+        justify-content: space-between;
+
+        & span {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 167.2%;
+        }
+
+        @media (max-width: $max_mobile) {
+            margin-top: 90px;
+        }
+    }
+
+    &__email {
+        @include flex-center()
+    }
+
+    &__input-left {
+        border-bottom-left-radius: 24px;
+        border-top-left-radius: 24px;
+        height: 49px;
+        width: 256px;
+        padding: 15px;
+        border: none;
+        background: #E1E1E1;
+    }
+
+    &__input-right {
+        border-bottom-right-radius: 24px;
+        border-top-right-radius: 24px;
+        height: 49px;
+        width: 100px;
+        background-color: #F16D7F;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+
 .footer {
     background-color: #222224;
     height: 80px;
     color: #FBFBFB;
     @include space-between();
+
     &__contact {
         display: flex;
         justify-content: flex-end;
     }
+
     &__link {
         color: #000;
         text-decoration: none;
@@ -19,6 +112,7 @@
         @include flex-center()
     }
 }
+
 .footer__link:hover {
     color: #EF5B70;
 }

@@ -23,38 +23,31 @@
     }
 }
 .specification {
-    // border: 1px solid red;
-    width: 1140px;
-    height: 600px;
+    border: 1px solid #EAEAEA;
+
     margin-top: -64px;
+    margin-bottom: 129px;
     position: relative;
     background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-   &__header-font1 {
-    padding-top: 64px;
-    padding-bottom: 13px ;
-    color: $pink;
-   } 
-   &__header-font2 {
+    & h2 {
+        padding-top: 64px;
+        padding-bottom: 13px ;
+        color: $pink;
+    }
+   & h3 {
     margin-top: 12px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
     color: #4D4D4D;
    }
-   &__main-font {
+   & p {
     margin-top: 48.5px;
     color: #5E5E5E;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
     text-align: center;
     padding: 0 280px;
    }
-   &__price-font {
-    font-size: 24px;
+   & h4 {
     line-height: 29px;
     color: #EF5B70;
     margin: 32px 0 65px 0;

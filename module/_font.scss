@@ -8,10 +8,17 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #222222;
+        text-decoration: none;
+
     }
+
     &__24p {
         font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__24-b {
+        font-weight: bold;
         font-size: 24px;
         line-height: 29px;
     }
@@ -22,9 +29,40 @@
     }
     &__14p {
         font-size: 14px;
-        line-height: 17px; 
+        line-height: 17px;
+        font-weight: 300;
+        text-decoration: none;
     }
-
+    &__48p {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+    }
+    &__30p {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    &__32-b {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    &__18p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__22p {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    &__price {
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+    }
 }
 .gray {
     color: #B1B1B1;  
