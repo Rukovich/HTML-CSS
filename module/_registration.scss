@@ -4,28 +4,41 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+
+    @media (max-width: $max_mobile) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .reg-form {
     width: 360px;
+    margin-right: 20px;
+
     &__input {
         width: 360px;
         height: 45px;
         border: 1px solid #A4A4A4;
         padding: 0 0 0 17px;
     }
-    &__ln, &__pw{
+
+    &__ln,
+    &__pw {
         margin-top: 21px;
     }
+
     & h4 {
         margin-bottom: 20px;
     }
+
     & p {
         margin: 15.5px 0 39px 0;
     }
+
     &__gender {
-        margin:32px 0 33px 0 ;
+        margin: 32px 0 33px 0;
     }
+
     &__submit {
         width: 167px;
         height: 50px;
@@ -34,21 +47,53 @@
         color: white;
         cursor: pointer;
     }
+
     &__gender-r {
         margin-left: 20px;
     }
 }
+
 .reg-list {
-    width: 652px;
+    max-width: 652px;
     display: flex;
     flex-direction: column;
-    & ul  {
+
+    @media (max-width: $max_tablet) {
+        max-width: 354px;
+    }
+
+    @media (max-width: $max_mobile) {
+        margin-top: 40px;
+    }
+
+    & h3,
+    p {
+        @media (max-width: $max_tablet) {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    & ul {
         list-style-image: url(/img/registration/check.svg);
         list-style-position: inside;
+
+
+        & li {
+
+            @media (max-width: $max_tablet) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
     }
+
     & li {
         padding-bottom: 16px;
     }
 }
 
-
+// .reg-list>h3 {
+//     font-size: 16px;
+//     line-height: 19px;
+// }

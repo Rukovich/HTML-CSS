@@ -1207,8 +1207,21 @@ section {
           align-items: start;
 }
 
+@media (max-width: 600px) {
+  .registration-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .reg-form {
   width: 360px;
+  margin-right: 20px;
 }
 
 .reg-form__input {
@@ -1248,7 +1261,7 @@ section {
 }
 
 .reg-list {
-  width: 652px;
+  max-width: 652px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1258,9 +1271,36 @@ section {
           flex-direction: column;
 }
 
+@media (max-width: 1024px) {
+  .reg-list {
+    max-width: 354px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reg-list {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reg-list h3,
+  .reg-list p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
 .reg-list ul {
   list-style-image: url(/img/registration/check.svg);
   list-style-position: inside;
+}
+
+@media (max-width: 1024px) {
+  .reg-list ul li {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .reg-list li {
