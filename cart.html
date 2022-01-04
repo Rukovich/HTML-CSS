@@ -37,14 +37,15 @@
             </div>
         </div>
     </nav>
-    <section class="container product-block">
-        <div class="product-block">
-            <div class="product">
-                <img class="product__img" src="img/cart/product-card-1.png" alt="">
-                <div class="product__text">
-                    <div class="product__heading">
+    <section class="container">
+        <div class="product">
+
+            <div class="product-block">
+                <img class="product-block__img" src="img/cart/product-card-1.png" alt="">
+                <div class="product-block__text">
+                    <div class="product-block__heading">
                         <p class="font__24p">MANGO PEOPLE <br> T-SHIRT</p>
-                        <button class="product__close">
+                        <button class="product-block__close">
                             <img src="img/cart/close.svg" alt="">
                         </button>
 
@@ -57,24 +58,26 @@
                     </ul>
                 </div>
             </div>
-            <div class="product">
-                <img class="product__img" src="img/cart/product-card-2.png" alt="">
-                <div class="product__text">
-                    <div class="product__heading">
+
+            <div class="product-block">
+                <img class="product-block__img" src="img/cart/product-card-2.png" alt="">
+                <div class="product-block__text">
+                    <div class="product-block__heading">
                         <p class="font__24p">MANGO PEOPLE <br> T-SHIRT</p>
-                        <button class="product__close">
+                        <button class="product-block__close">
                             <img src="img/cart/close.svg" alt="">
                         </button>
 
                     </div>
                     <ul class="font__22p">
-                        <li>Price:<span> $300</span> </li>
+                        <li>Price: <span>$300</span></li>
                         <li>Color: Red</li>
                         <li>Size: Xl</li>
                         <li>Quantity:</li>
                     </ul>
                 </div>
             </div>
+
             <nav class="cart-nav">
                 <a class="font__14p" href="#">CLEAR SHOPPING CART</a>
                 <a class="font__14p" href="#">CONTINUE SHOPPING</a>
@@ -82,21 +85,71 @@
         </div>
         <!-- Боковая панель -->
         <aside class="shipping-form">
-            <p class="font__16p">SHIPPING ADRESS</p>
+            <section class="shipping-left">
+                <p class="font__16p">SHIPPING ADRESS</p>
 
-            <form class="shipping-form__button" action="#">
-                <input type="adres" minlength="2" maxlength="10" placeholder="Bangladesh"><br>
-                <input type="tel" placeholder="State"><br>
-                <input type="text" placeholder="Postcode / Zip"><br>
-                <input class="shipping-form__send font__11p" type="submit" value="GET A QUOTE">
-            </form>
+                <form class="shipping-left__button" action="#">
+                    <input type="adres" minlength="2" maxlength="10" placeholder="Bangladesh"><br>
+                    <input type="tel" placeholder="State"><br>
+                    <input type="text" placeholder="Postcode / Zip"><br>
+                    <input class="shipping-left__send font__11p" type="submit" value="GET A QUOTE">
+                </form>
+            </section>
 
-            <section class="checkpoint">
+            <section class="shipping-right">
                 <p class="font__11p">SUB TOTAL &nbsp &nbsp $900</p>
                 <h3 class="font__16p">GRAND TOTAL &nbsp &nbsp <span style="color:#F16D7F;">$900</span></h3>
                 <hr>
                 <input class="font__16p" type="submit" value="PROCEED TO CHECKOUT">
             </section>
         </aside>
+
     </section>
+    <footer>
+        <section class="subscribe">
+            <div class="container subscribe__form">
+                <div class="subscribe__desc">
+                    <img src="img/subscrible/face.png" alt="">
+                    <p>Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span> a
+                            pulvinar purus
+                            condimentum</span>
+                    </p>
+                </div>
+                <div class="subscribe__input">
+                    <div class="subscrible__text">
+                        <h3> <span>SUBSCRIBE</span><br>FOR OUR
+                            NEWLETTER AND
+                            PROMOTION </h3>
+                    </div>
+                    <form action="#" class="subscribe__email">
+                        <input class="subscribe__input-left" placeholder="Enter Your Email" type="text" name="email" />
+                        <input class="subscribe__input-right" type="submit" value="subscrible">
+                    </form>
+                </div>
+            </div>
+        </section>
+        </main>
+        <!-- <footer> -->
+        <div class="footer">
+            <div class="footer container">
+                <div class="footer__copyright">
+                    <p class="text">© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="footer__contact">
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>

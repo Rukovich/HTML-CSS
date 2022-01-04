@@ -841,20 +841,64 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.product-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 652px;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 
-.product__text {
+.product-block:first-child {
+  margin-top: 96px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .product-block__img {
+    width: 143px;
+  }
+}
+
+.product-block__text {
   width: 390px;
   padding: 22px 22px 62px 32px;
 }
 
-.product__heading {
+@media (max-width: 1024px) {
+  .product-block__text {
+    width: 472px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-block__text {
+    width: 214px;
+    padding: 13px 13px 40px 17px;
+  }
+}
+
+.product-block__heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,28 +906,42 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #222222;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.product__close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+.product-block p {
+  font-weight: normal;
 }
 
-.product ul {
+@media (max-width: 600px) {
+  .product-block p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.product-block ul {
   margin-top: 42px;
   list-style: none;
   color: #575757;
 }
 
-.product p {
-  font-weight: normal;
+@media (max-width: 600px) {
+  .product-block ul {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
-.product img {
+.product-block__close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-block__close img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,17 +949,17 @@
       align-content: flex-start;
 }
 
-.product span {
+@media (max-width: 600px) {
+  .product-block__close img {
+    width: 10px;
+  }
+}
+
+.product-block span {
   color: #F16D7F;
 }
 
-.product:first-child {
-  margin-top: 96px;
-  margin-bottom: 40px;
-}
-
 .cart-nav {
-  width: 652px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -918,6 +976,35 @@
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .cart-nav a {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cart-nav a:first-child {
+    margin-right: 25px;
+  }
+  .cart-nav a:last-child {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-nav {
+    margin: 48px 0 30px 0;
+  }
+  .cart-nav a:first-child {
+    margin-right: 5px;
+  }
+  .cart-nav a:last-child {
+    margin-left: 5px;
+  }
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,19 +1014,82 @@ section {
           justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .shipping-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .shipping-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 96px;
+  }
+}
+
+@media (max-width: 600px) {
+  .shipping-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.shipping-left {
   width: 360px;
   height: 272px;
   margin-top: 113px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.shipping-form p {
-  color: #222222;
-  margin-bottom: 12px;
+@media (max-width: 1024px) {
+  .shipping-left {
+    margin-top: -35px;
+  }
 }
 
-.shipping-form__button {
+@media (max-width: 600px) {
+  .shipping-left {
+    margin-top: 0px;
+  }
+}
+
+.shipping-left__button {
   width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,14 +1100,14 @@ section {
           flex-direction: column;
 }
 
-.shipping-form input {
+.shipping-left input {
   height: 45px;
   outline: 1px solid #A4A4A4;
   padding-left: 17px;
   border: none;
 }
 
-.shipping-form__send {
+.shipping-left__send {
   width: 102px;
   height: 35px;
   padding: 10px 14px;
@@ -967,7 +1117,7 @@ section {
   color: #4A4A4A;
 }
 
-.checkpoint {
+.shipping-right {
   width: 360px;
   height: 214px;
   margin-top: 57.5px;
@@ -987,19 +1137,31 @@ section {
           justify-content: start;
 }
 
-.checkpoint p {
+@media (max-width: 1024px) {
+  .shipping-right {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .shipping-right {
+    margin-top: 48.5px;
+  }
+}
+
+.shipping-right p {
   padding-top: 39px;
   padding-right: 34px;
   margin-bottom: 12px;
   color: #4A4A4A;
 }
 
-.checkpoint h3 {
+.shipping-right h3 {
   padding-right: 37px;
   color: #222222;
 }
 
-.checkpoint hr {
+.shipping-right hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1013,7 +1175,7 @@ section {
   background-color: #E2E2E2;
 }
 
-.checkpoint input {
+.shipping-right input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
