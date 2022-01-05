@@ -75,6 +75,10 @@
   margin-right: 33px;
 }
 
+.header__item:first-child {
+  cursor: initial;
+}
+
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,6 +224,7 @@
 .burger .nav__link {
   text-decoration: none;
   color: #6F6E6E;
+  line-height: 200%;
 }
 
 .burger #burger {
@@ -920,13 +925,14 @@
           justify-content: space-between;
 }
 
+.spec-footer__input:hover {
+  color: white;
+  background-color: #F16D7F;
+}
+
 .spec-footer__input i {
   padding-right: 20px;
   padding-top: 2px;
-}
-
-.spec-footer__input:hover {
-  color: #5E5E5E;
 }
 
 .product__card {
@@ -1272,7 +1278,7 @@ section {
   background-color: #E2E2E2;
 }
 
-.shipping-right input {
+.shipping-right a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

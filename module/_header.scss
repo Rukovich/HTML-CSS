@@ -21,6 +21,10 @@
         &:not(:last-child) {
             margin-right: 33px;
         }
+
+        &:first-child {
+            cursor: initial;
+        }
     }
 }
 
@@ -142,6 +146,7 @@
         &__link {
             text-decoration: none;
             color: #6F6E6E;
+            line-height: 200%;
         }
     }
 

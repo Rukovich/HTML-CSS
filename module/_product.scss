@@ -111,6 +111,8 @@
         display: flex;
         justify-content: center;
         margin: 49px 0 65px 0;
+
+
     }
 
     &__input {
@@ -121,15 +123,17 @@
         display: flex;
         justify-content: space-between;
 
+        &:hover {
+            color: white;
+            background-color: #F16D7F;
+        }
+
         & i {
             padding-right: 20px;
             padding-top: 2px;
         }
     }
 
-    &__input:hover {
-        color: #5E5E5E;
-    }
 }
 
 .product__card {
