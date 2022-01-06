@@ -4,11 +4,18 @@
     height: 75px;
 
     &__wrap {
-        @include space-between()
+        @include space-between();
+    }
+
+    &__left {
+        @include space-between();
+        align-items: center;
+        height: 44px;
     }
 
     &__right {
-        @include space-between()
+        @include space-between();
+        height: 44px;
     }
 
     &__logo {
@@ -25,8 +32,21 @@
         &:first-child {
             cursor: initial;
         }
+
+        @media (max-width: $max_mobile) {
+
+            &:not(:first-child) {
+                display: none;
+            }
+
+            &:nth-child(1) {
+                margin-right: 0px;
+            }
+        }
     }
 }
+
+
 
 .heading {
     display: flex;
@@ -56,9 +76,9 @@
         justify-content: space-between;
         list-style-type: none;
 
-        @media (max-width: $max_mobile) {
-            margin-bottom: 20px;
-        }
+        // @media (max-width: $max_mobile) {
+        //     margin-bottom: 20px;
+        // }
 
         & a {
             color: #6F6E6E;
@@ -105,7 +125,9 @@
 
     &__nav {
         position: absolute;
-        right: -480%; //костыльное решение, не понимаю как прижать к краю экрана, помогите(((
+        // left: -37px;
+        right: -150px;
+        //костыльное решение, не понимаю как прижать к краю экрана, помогите(((
         z-index: 10;
         display: none;
         top: 75px-24px; //высота хедера - высота иконки
