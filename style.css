@@ -84,6 +84,10 @@
   margin-right: 41px;
 }
 
+.header__bascet {
+  position: relative;
+}
+
 .header__item {
   cursor: pointer;
 }
@@ -192,7 +196,6 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
   z-index: 2;
   list-style-type: none;
 }
@@ -203,10 +206,10 @@
 
 .burger__nav {
   position: absolute;
-  right: -150px;
+  right: 0;
   z-index: 10;
   display: none;
-  top: 51px;
+  top: 75px;
 }
 
 .burger .nav {

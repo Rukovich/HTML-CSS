@@ -22,6 +22,10 @@
         margin-right: 41px;
     }
 
+    &__bascet {
+        position: relative;
+    }
+
     &__item {
         cursor: pointer;
 
@@ -115,7 +119,7 @@
 .burger {
     display: flex;
     justify-content: flex-end;
-    position: relative;
+    // position: relative;
     z-index: 2;
     list-style-type: none;
 
@@ -125,13 +129,10 @@
 
     &__nav {
         position: absolute;
-        // left: -37px;
-        right: -150px;
-        //костыльное решение, не понимаю как прижать к краю экрана, помогите(((
+        right: 0;
         z-index: 10;
         display: none;
-        top: 75px-24px; //высота хедера - высота иконки
-
+        top: 75px;
     }
 
     .nav {
