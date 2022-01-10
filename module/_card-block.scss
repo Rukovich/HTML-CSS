@@ -40,13 +40,16 @@
         padding: 25px 25px 17px 17px;
     }
 
-    & h3 {
-        padding-bottom: 12.65px;
-        font-weight: normal;
+    &__heading {
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000;
     }
 
     & h4 {
         color: #5D5D5D;
+        padding-top: 12.65px;
         padding-bottom: 18px;
     }
 
@@ -82,6 +85,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
 
         & img {
             padding-right: 10px;

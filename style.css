@@ -29,20 +29,17 @@
   color: #F16D7F;
 }
 
-a * {
-  cursor: pointer;
-}
-
-a *:hover {
-  opacity: 0.6;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .header {
   background-color: #222222;
   padding: 16px 0;
   height: 75px;
+}
+
+.header a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header__wrap {
@@ -57,9 +54,10 @@ a *:hover {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 44px;
 }
 
-.header__left {
+.header__left, .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,23 +69,6 @@ a *:hover {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  align-items: center;
-  height: 44px;
-}
-
-.header__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 44px;
 }
 
 .header__logo {
@@ -96,6 +77,13 @@ a *:hover {
 
 .header__bascet {
   position: relative;
+}
+
+.header__item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header__item:not(:last-child) {
@@ -208,6 +196,12 @@ a *:hover {
 
 .burger label {
   cursor: pointer;
+}
+
+.burger label:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .burger__nav {
@@ -514,13 +508,16 @@ a *:hover {
   padding: 25px 25px 17px 17px;
 }
 
-.card h3 {
-  padding-bottom: 12.65px;
-  font-weight: normal;
+.card__heading {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
 }
 
 .card h4 {
   color: #5D5D5D;
+  padding-top: 12.65px;
   padding-bottom: 18px;
 }
 
@@ -569,6 +566,7 @@ a *:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
 }
 
 .card__btn img {
