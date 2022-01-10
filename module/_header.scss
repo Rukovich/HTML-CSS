@@ -1,3 +1,13 @@
+a * {
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+}
+
 .header {
     background-color: #222222;
     padding: 16px 0;
@@ -27,7 +37,6 @@
     }
 
     &__item {
-        cursor: pointer;
 
         &:not(:last-child) {
             margin-right: 33px;
@@ -80,10 +89,6 @@
         justify-content: space-between;
         list-style-type: none;
 
-        // @media (max-width: $max_mobile) {
-        //     margin-bottom: 20px;
-        // }
-
         & a {
             color: #6F6E6E;
 
@@ -119,7 +124,6 @@
 .burger {
     display: flex;
     justify-content: flex-end;
-    // position: relative;
     z-index: 2;
     list-style-type: none;
 

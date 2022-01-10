@@ -29,6 +29,16 @@
   color: #F16D7F;
 }
 
+a * {
+  cursor: pointer;
+}
+
+a *:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .header {
   background-color: #222222;
   padding: 16px 0;
@@ -86,10 +96,6 @@
 
 .header__bascet {
   position: relative;
-}
-
-.header__item {
-  cursor: pointer;
 }
 
 .header__item:not(:last-child) {
