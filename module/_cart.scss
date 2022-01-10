@@ -1,4 +1,4 @@
-.product {
+.product-left {
     display: flex;
     flex-direction: column;
 
@@ -132,7 +132,7 @@
     }
 }
 
-section {
+.container__product {
     display: flex;
     justify-content: space-between;
 
@@ -145,6 +145,7 @@ section {
 .shipping-form {
     display: flex;
     flex-direction: column;
+
 
     @media (max-width: $max_tablet) {
         display: flex;
@@ -162,9 +163,13 @@ section {
 .shipping-left {
     width: 360px;
     height: 272px;
-    margin-top: 113px;
+    margin-top: 96px;
     display: flex;
     flex-direction: column;
+
+    & p {
+        margin-bottom: 20px;
+    }
 
     @media (max-width: $max_tablet) {
         margin-top: 0px - 35px;

@@ -268,11 +268,28 @@
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .subscribe {
-    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 610px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
   }
 }
 
@@ -280,25 +297,29 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .subscribe__form {
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -327,10 +348,8 @@
   line-height: 24px;
 }
 
-@media (max-width: 600px) {
-  .subscribe__desc {
-    margin-top: 60px;
-  }
+.subscribe__desc p span {
+  font-style: italic;
 }
 
 .subscribe__input {
@@ -358,12 +377,6 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 167.2%;
-}
-
-@media (max-width: 600px) {
-  .subscribe__input {
-    margin-top: 90px;
-  }
 }
 
 .subscribe__email {
@@ -418,6 +431,21 @@
           box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    height: 143px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,6 +453,12 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .footer__contact {
+    margin-top: 40px;
+  }
 }
 
 .footer__link {
@@ -450,7 +484,7 @@
 }
 
 .footer__link:hover {
-  color: #EF5B70;
+  background-color: #EF5B70;
 }
 
 .card {
@@ -968,7 +1002,7 @@
   margin-bottom: 128px;
 }
 
-.product {
+.product-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,7 +1013,7 @@
 }
 
 @media (max-width: 1024px) {
-  .product {
+  .product-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1136,7 +1170,7 @@
   }
 }
 
-section {
+.container__product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,7 +1180,7 @@ section {
 }
 
 @media (max-width: 1024px) {
-  section {
+  .container__product {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1198,7 +1232,7 @@ section {
 .shipping-left {
   width: 360px;
   height: 272px;
-  margin-top: 113px;
+  margin-top: 96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1206,6 +1240,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.shipping-left p {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1024px) {
