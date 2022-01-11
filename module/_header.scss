@@ -4,6 +4,8 @@
     height: 75px;
 
     & a {
+        cursor: pointer;
+
         &:hover {
             cursor: pointer;
             opacity: 0.7;
@@ -30,11 +32,12 @@
     }
 
     &__item {
-        &:hover {
-            cursor: pointer;
-            opacity: 0.7;
-            transition: 0.2s;
-        }
+        cursor: pointer;
+        // &:hover {
+        //     cursor: pointer;
+        //     opacity: 0.7;
+        //     transition: 0.2s;
+        // }
 
         &:not(:last-child) {
             margin-right: 33px;
@@ -125,13 +128,10 @@
     z-index: 2;
     list-style-type: none;
 
-    & label {
+    & label:hover {
         cursor: pointer;
-
-        &:hover {
-            opacity: 0.7;
-            transition: 0.2s;
-        }
+        opacity: 0.7;
+        transition: 0.2s;
     }
 
     &__nav {
@@ -178,7 +178,7 @@
         &__link {
             text-decoration: none;
             color: #6F6E6E;
-            line-height: 200%;
+            line-height: 185%;
         }
     }
 
@@ -192,5 +192,6 @@
 
     #burger:not(checked)~.burger__nav {
         display: none;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 }
